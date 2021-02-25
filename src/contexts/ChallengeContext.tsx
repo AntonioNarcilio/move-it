@@ -35,7 +35,7 @@ export function ChallengeProvider({ children }: ChallengesProviderProps) {
 
   const [activeChallenge, setActiveChallenge] = useState(null);
 
-  // Calculo geralmente utilizado nos game de rpg's
+  // Calculo geralmente utilizado nos game de RPG'S
   // eslint-disable-next-line no-restricted-properties
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
 
