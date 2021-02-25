@@ -1,0 +1,14 @@
+# Arquivo principal
+root = true
+
+# Definindo regras para todos os tipos de arquivo
+[*]
+# Caso queira apenas para um tipo, ex: javascript
+# [js]
+
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
