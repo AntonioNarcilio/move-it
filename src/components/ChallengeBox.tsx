@@ -36,7 +36,7 @@ export function ChallengeBox() {
             <button
               type="button"
               className={styles.challengeFailedButton}
-              // onClick={resetChallenge}
+              onClick={resetChallenge}
             >
               Falhei
             </button>
