@@ -6,3 +6,4 @@
 - Typescript
 - ESLint
 - Next.Js
+- Vercel
