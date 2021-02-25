@@ -1,4 +1,7 @@
-import { createContext, useState, ReactNode } from 'react';
+/* eslint-disable no-new */
+import {
+  createContext, useState, ReactNode, useEffect,
+} from 'react';
 import challenges from '../../challenges.json';
 
 interface Challenge {
@@ -12,11 +15,12 @@ interface ChallengeContextData {
   level: number;
   currentExperience: number;
   experienceToNextLevel: number;
-  challengesComplete: number;
+  challengesCompleted: number;
   activeChallenge: Challenge;
   levelUp: () => void; // função que não tem retorna
-  startNowChallenge: () => void;
+  startNewChallenge: () => void;
   resetChallenge: () => void;
+  completeChallenge: () => void;
 }
 
 interface ChallengesProviderProps {
@@ -31,7 +35,7 @@ export function ChallengeProvider({ children }: ChallengesProviderProps) {
   // Estado para armazenar o level
   const [level, setLevel] = useState(1);
   const [currentExperience, setCurrentExperience] = useState(0);
-  const [challengesComplete, setChallengesComplete] = useState(0);
+  const [challengesCompleted, setChallengesCompleted] = useState(0);
 
   const [activeChallenge, setActiveChallenge] = useState(null);
 
@@ -39,18 +43,53 @@ export function ChallengeProvider({ children }: ChallengesProviderProps) {
   // eslint-disable-next-line no-restricted-properties
   const experienceToNextLevel = Math.pow((level + 1) * 4, 2);
 
+  // Pedindo permissão para notificações no browser
+  // Utilizando api do browser
+  useEffect(() => {
+    Notification.requestPermission();
+  }, []);
+
   function levelUp() {
     setLevel(level + 1);
   }
 
-  function startNowChallenge() {
+  function startNewChallenge() {
     const randomChallengesIndex = Math.floor(Math.random() * challenges.length);
     const challenge = challenges[randomChallengesIndex];
     setActiveChallenge(challenge);
+
+    // Tocando audio
+    new Audio('/notification.mp3').play();
+
+    // Verificando se usuário deu permissão para notificações
+    if (Notification.permission === 'granted') {
+      new Notification('Novo desafio 🎉', {
+        body: `Valendo ${challenge.amount} xp!`,
+      });
+    }
   }
 
   function resetChallenge() {
     setActiveChallenge(null);
+  }
+
+  function completeChallenge() {
+    if (!activeChallenge) {
+      return;
+    }
+
+    const { amount } = activeChallenge;
+    // Pegando xp do usuário e add xp referente a quanto desafio dá
+    let finalExperience = currentExperience + amount;
+
+    if (finalExperience >= experienceToNextLevel) {
+      finalExperience -= experienceToNextLevel;
+      levelUp();
+    }
+
+    setCurrentExperience(finalExperience);
+    setActiveChallenge(null);
+    setChallengesCompleted(challengesCompleted + 1);
   }
 
   return (
@@ -59,11 +98,12 @@ export function ChallengeProvider({ children }: ChallengesProviderProps) {
         level,
         currentExperience,
         experienceToNextLevel,
-        challengesComplete,
+        challengesCompleted,
         activeChallenge,
         levelUp,
-        startNowChallenge,
+        startNewChallenge,
         resetChallenge,
+        completeChallenge,
       }}
     >
       {children}
