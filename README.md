@@ -12,9 +12,9 @@
 
 <br>
 
-<h3 id="desc">
+<h2 id="desc">
 💟 Sobre o projeto
-</h3>
+</h2>
 
 <p align="justify">
 O <b>Move it</b> é uma aplicação desenvolvido com o intuito de ajudar aqueles que passam um bom tempo à frente do computador, como é o caso de nós <i>desenvolvedores</i> 👨‍💻.
@@ -22,9 +22,9 @@ O <b>Move it</b> é uma aplicação desenvolvido com o intuito de ajudar aqueles
 O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo certos problemas gerados por esse uso excessivo, seja eles nas articulações ou nos olhos gerando problema de visão. Com isso o <i>Move it</i> entra para ajudar, unido a <i><u> técnica de pomodoro</u></i> com os exercícios/alongamentos que "ajudam a evitar esse problema citado acima". Tudo isso junto em uma aplicação que usa a gamificação para deixar os desafios mais divertidos.
 </p>
 
-<h3 id="tec">
+<h2 id="tec">
 🛸 Tecnologias
-</h3>
+</h2>
 
 <a href="https://reactjs.org">
  <img alt="reactjs" title="reactjs" src="https://img.shields.io/static/v1?label=React&message=Javascript%20library&style=social&logo=React&logoColor=0088CC" />
@@ -39,7 +39,6 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 
 <br/>
 
-<p align="left">
 <a href="https://www.typescriptlang.org/download">
  <img alt="typescript" title="typescript" src="https://img.shields.io/static/v1?label=TypeScript&message=Typed%20JavaScript&style=social&logo=typescript&logoColor=27609E" />
 </a>
@@ -56,17 +55,17 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
  <img alt="figma" title="figma" src="https://img.shields.io/static/v1?label=Figma&message=Project%20prototyping&style=social&logo=Figma&logoColor=F24E1E" />
 </a>
 
-<h3 id="Projeto">
+<h2 id="Projeto">
 👔 Projeto
-</h3>
+</h2>
 
 <a href="https://antonionarcilio-move-it.vercel.app">
 <img title="move.it" src="./.github/moveit-display.png">
 </a>
 
-<h3 id="lic">
+<h2 id="lic">
 📃 Licença
-</h3>
+</h2>
 
 Este projeto esta sobe a licença [MIT](./LICENSE).
 
