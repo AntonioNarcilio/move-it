@@ -24,7 +24,6 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 
 ---
 
-<br/>
 <h3 id="tec">
 🛸 Tecnologias
 </h3>
@@ -61,7 +60,6 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 
 ---
 
-<br/>
 <h3 id="Projeto">
 👔 Projeto
 </h3>
@@ -72,7 +70,6 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 
 ---
 
-<br/>
 <h3 id="lic">
 📃 Licença
 </h3>
