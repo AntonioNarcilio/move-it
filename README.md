@@ -17,7 +17,7 @@
 </h3>
 
 <p align="justify">
-O <b>Move it</b> é uma aplicação desenvolvido com o intuito de ajudar aqueles que passam um bom tempo a frente do computador, como é o caso de nós <i>desenvolvedores</i> 👨‍💻.
+O <b>Move it</b> é uma aplicação desenvolvido com o intuito de ajudar aqueles que passam um bom tempo à frente do computador, como é o caso de nós <i>desenvolvedores</i> 👨‍💻.
 <br/>
 O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo certos problemas gerados por esse uso excessivo, seja eles nas articulações ou nos olhos gerando problema de visão. Com isso o <i>Move it</i> entra para ajudar, unido a <i><u> técnica de pomodoro</u></i> com os exercícios/alongamentos que "ajudam a evitar esse problema citado acima". Tudo isso junto em uma aplicação que usa a gamificação para deixar os desafios mais divertidos.
 </p>
