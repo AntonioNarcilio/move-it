@@ -22,6 +22,9 @@ O <b>Move it</b> é uma aplicação desenvolvido com o intuito de ajudar aqueles
 O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo certos problemas gerados por esse uso excessivo, seja eles nas articulações ou nos olhos gerando problema de visão. Com isso o <i>Move it</i> entra para ajudar, unido a <i><u> técnica de pomodoro</u></i> com os exercícios/alongamentos que "ajudam a evitar esse problema citado acima". Tudo isso junto em uma aplicação que usa a gamificação para deixar os desafios mais divertidos.
 </p>
 
+---
+
+<br/>
 <h3 id="tec">
 🛸 Tecnologias
 </h3>
@@ -56,6 +59,9 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
  <img alt="figma" title="figma" src="https://img.shields.io/static/v1?label=Figma&message=Project%20prototyping&style=social&logo=Figma&logoColor=F24E1E" />
 </a>
 
+---
+
+<br/>
 <h3 id="Projeto">
 👔 Projeto
 </h3>
@@ -64,6 +70,9 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 <img title="move.it" src="./.github/moveit-display.png">
 </a>
 
+---
+
+<br/>
 <h3 id="lic">
 📃 Licença
 </h3>
