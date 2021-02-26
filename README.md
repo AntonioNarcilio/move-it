@@ -6,7 +6,7 @@
 
 <h4 align="center">
 
-[Descrição](#desc) ✦ [Tecnologias](#tec) ✦ [Projeto](#Projeto) ✦ Prototipagem ✦ [Licença](#lic)
+[Descrição](#desc) ✦ [Tecnologias](#tec) ✦ [Projeto](#Projeto) ✦ Prototipagem ✦ Rodando localmente ✦ [Licença](#lic)
 
 </h4>
 
