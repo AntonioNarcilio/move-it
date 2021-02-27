@@ -57,6 +57,13 @@ export function ChallengeProvider({
   // Utilizando api do browser
   useEffect(() => {
     Notification.requestPermission();
+
+    // if (Notification.permission === 'denied' || Notification.permission === 'default') {
+    //   Notification.requestPermission().then((result) => {
+    //     console.log(result);
+    //   });
+    //   alert('Precisamos da permissão para notificações');
+    // }
   }, []);
 
   // 🍪 Trabalhando com cookies

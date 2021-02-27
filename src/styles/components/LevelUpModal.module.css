@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.animation {
+  position: absolute;
+}
+
 .container {
   background: var(--foreground);
   width: 100%;

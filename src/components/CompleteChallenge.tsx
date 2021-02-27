@@ -8,7 +8,15 @@ export function CompleteChallenges() {
   return (
     <div className={styles.completeChallengeContainer}>
       <span>Desafios completos</span>
-      <span>{challengesCompleted}</span>
+      { challengesCompleted < 10 ? (
+        <span>
+          0
+          {challengesCompleted}
+        </span>
+      ) : (
+        <span>{challengesCompleted}</span>
+      ) }
+
     </div>
   );
 }
