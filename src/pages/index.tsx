@@ -10,6 +10,7 @@ import { CountdownProvider } from '../contexts/CountdownContext';
 
 import styles from '../styles/pages/Home.module.css';
 import { ChallengeProvider } from '../contexts/ChallengeContext';
+import { MyFooter } from '../components/MyFooter';
 
 interface HomeProps {
   level: number;
@@ -44,7 +45,10 @@ export default function Home(props: HomeProps) {
             </div>
           </section>
         </CountdownProvider>
+
+        <MyFooter />
       </div>
+
     </ChallengeProvider>
   );
 }

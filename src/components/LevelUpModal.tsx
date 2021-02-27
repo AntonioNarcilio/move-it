@@ -1,8 +1,8 @@
 /* eslint-disable import/no-unresolved */
 import { useContext } from 'react';
 import Lottie from 'react-lottie';
-
-import loadingAnimation from '../animation/congratulations.json';
+import { motion } from 'framer-motion';
+import loadingAnimation from '../animation/confetti-theme-dracula.json';
 
 import { ChallengeContext } from '../contexts/ChallengeContext';
 import styles from '../styles/components/LevelUpModal.module.css';
@@ -19,11 +19,20 @@ export function LevelUpModal() {
             autoplay: true,
             animationData: loadingAnimation,
           }}
-          height={850}
-          width={850}
+          width={800}
+          // height={800}
         />
       </div>
-      <div className={styles.container}>
+      <motion.div
+        className={styles.container}
+        transition={{ delay: 0, duration: 0.5 }}
+        variants={{
+          visible: { opacity: 1 },
+          hidden: { opacity: 0 },
+        }}
+        initial="hidden"
+        animate="visible"
+      >
         <header>{level}</header>
 
         <strong>Parabéns !</strong>
@@ -32,7 +41,7 @@ export function LevelUpModal() {
         <button type="button" onClick={closeLevelUpModal}>
           <img src="/icons/close.svg" alt="fechar modal" />
         </button>
-      </div>
+      </motion.div>
     </div>
   );
 }
