@@ -28,7 +28,7 @@ span.currentExperience {
   transform: translateX(-50%);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 720px) {
   span.currentExperience {
     width: 20%;
   }

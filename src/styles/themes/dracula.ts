@@ -1,0 +1,27 @@
+export default {
+  title: 'dracula',
+
+  colors: {
+    white: '#f8f8f2',
+    background: '#1d1e26',
+    foreground: '#282a36',
+    grayLine: '#44475a',
+    text: '#f8f8f2',
+    textHighlight: '#b3b9ff',
+    title: '#50fa7b',
+    red: '#ff5555',
+    redDark: '#e64c4c',
+    redShadow: '#b33a3a',
+    green: '#50fa7b',
+    greenDark: '#45d168',
+    greenShadow: '#36a552',
+    pink: '#ff79c6',
+    pinkDark: '#bb508d',
+    pinkShadow: '#f562b5',
+    purple: '#bd93f9',
+    purpleDark: '#ac83e4',
+    purpleShadow: '#6e5294',
+    blueTwitter: '#2aa9e0',
+    cyan: '#8be9fd',
+  },
+};

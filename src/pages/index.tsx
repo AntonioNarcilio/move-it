@@ -1,10 +1,10 @@
 /* eslint-disable react/destructuring-assignment */
 import Head from 'next/head';
 import { GetServerSideProps } from 'next';
-import { ChallengeBox } from '../components/ChallengeBox';
+import ChallengeBox from '../components/ChallengeBox';
 import { CompleteChallenges } from '../components/CompleteChallenge';
 import { Countdown } from '../components/Countdown';
-import { ExperienceBar } from '../components/ExperienceBar';
+import ExperienceBar from '../components/ExperienceBar';
 import { Profile } from '../components/Profile';
 import { CountdownProvider } from '../contexts/CountdownContext';
 

@@ -1,10 +1,17 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-props-no-spreading */
+import { ThemeProvider } from 'styled-components';
 import '../styles/global.css';
+
+import dracula from '../styles/themes/dracula';
+import GlocalStyles from '../styles/global';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Component {...pageProps} />
+    <ThemeProvider theme={dracula}>
+      <GlocalStyles />
+      <Component {...pageProps} />
+    </ThemeProvider>
   );
 }
 

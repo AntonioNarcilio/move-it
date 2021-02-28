@@ -1,9 +1,16 @@
 import { useContext } from 'react';
-import { ChallengeContext } from '../contexts/ChallengeContext';
-import { CountdownContext } from '../contexts/CountdownContext';
-import styles from '../styles/components/ChallengeBox.module.css';
+import { ChallengeContext } from '../../contexts/ChallengeContext';
+import { CountdownContext } from '../../contexts/CountdownContext';
+import styles from '../../styles/components/ChallengeBox.module.css';
 
-export function ChallengeBox() {
+import {
+  ContainerChallengeBox,
+  ChallengeActive,
+  ChallengeFailedButton,
+  ChallengeSucceededButton,
+} from './styles';
+
+export default function ChallengeBox() {
   const { activeChallenge, resetChallenge, completeChallenge } = useContext(ChallengeContext);
   const { resetCountdown } = useContext(CountdownContext);
 
@@ -18,9 +25,9 @@ export function ChallengeBox() {
   }
 
   return (
-    <div className={styles.containerChallengeBox}>
+    <ContainerChallengeBox>
       { activeChallenge ? (
-        <div className={styles.challengeActive}>
+        <ChallengeActive>
           <header>
             Ganhe
             {' '}
@@ -45,22 +52,22 @@ export function ChallengeBox() {
           </main>
 
           <footer>
-            <button
+            <ChallengeFailedButton
               type="button"
               className={styles.challengeFailedButton}
               onClick={handleChallengeFailed}
             >
               Falhei
-            </button>
-            <button
+            </ChallengeFailedButton>
+            <ChallengeSucceededButton
               type="button"
               className={styles.challengeSucceededButton}
               onClick={handleChallengeSucceeded}
             >
               Completei
-            </button>
+            </ChallengeSucceededButton>
           </footer>
-        </div>
+        </ChallengeActive>
       ) : (
         <div className={styles.challengeNotActive}>
           <strong>Finalize um ciclo para receber um desafio</strong>
@@ -70,6 +77,6 @@ export function ChallengeBox() {
           </p>
         </div>
       )}
-    </div>
+    </ContainerChallengeBox>
   );
 }
