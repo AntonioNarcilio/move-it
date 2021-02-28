@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Button from '../Button';
 
 export const ContainerChallengeBox = styled.div`
   height: 101%;
@@ -56,25 +57,6 @@ export const ChallengeActive = styled.div`
   }
 `;
 
-export const Button = styled.button`
-  height: 3rem;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: 0;
-  border-radius: 5px;
-
-  color: ${(props) => props.theme.colors.background};
-  outline: 0;
-
-  font-size: 1rem;
-  font-weight: 600;
-
-  transition: all 0.2s ease;
-`;
-
 export const ChallengeFailedButton = styled(Button)`
   background: ${(props) => props.theme.colors.red};
   box-shadow: 0px 4px ${(props) => props.theme.colors.redShadow};
@@ -92,5 +74,3 @@ export const ChallengeSucceededButton = styled(Button)`
     background: ${(props) => props.theme.colors.greenDark};
   }
 `;
-
-// export default ContainerChallengeBox;

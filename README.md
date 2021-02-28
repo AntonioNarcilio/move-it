@@ -45,6 +45,12 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 
 <br/>
 
+<a href="">
+ <img alt="vercel" title="vercel" src="https://img.shields.io/static/v1?label=Styled%20Components&message=Library, CSS in JS&&style=social&logo=Styled-Components" />
+</a>
+
+<br/>
+
 <a href="https://vercel.com">
  <img alt="vercel" title="vercel" src="https://img.shields.io/static/v1?label=vercel&message=Deploy&&style=social&logo=Vercel" />
 </a>
