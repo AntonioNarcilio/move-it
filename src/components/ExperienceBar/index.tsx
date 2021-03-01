@@ -8,7 +8,7 @@ import {
   XpBarPercent,
 } from './styles';
 
-export default function ExperienceBar() {
+export function ExperienceBar() {
   const { currentExperience, experienceToNextLevel } = useContext(ChallengeContext);
 
   const percentToNextLevel = Math.round((currentExperience * 100) / experienceToNextLevel);

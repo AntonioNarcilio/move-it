@@ -1,16 +1,18 @@
-.containerMyFooter footer {
+import styled from 'styled-components';
+
+export const ContainerMyFooter = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
-.containerMyFooter footer a {
-  color: var(--green);
-}
+  footer a {
+    color: var(--green);
+  }
 
 @media (max-width: 600px) {
-  .containerMyFooter footer {
+  footer {
     margin-top: 2.5rem;
     font-size: 0.9rem;
   }
 }
+`;

@@ -68,9 +68,36 @@ export const ChallengeFailedButton = styled(Button)`
 
 export const ChallengeSucceededButton = styled(Button)`
   background: ${(props) => props.theme.colors.green};
-  box-shadow: 0px 4px ${(props) => props.theme.colors.greenDark};
+  box-shadow: 0px 4px ${(props) => props.theme.colors.greenShadow};
 
   &:hover {
     background: ${(props) => props.theme.colors.greenDark};
   }
 `;
+
+export const ChallengeNotActive = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  strong {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.4;
+    max-width: 70%;
+    margin-top: 3rem;
+  }
+
+  p img {
+    margin-bottom: 1rem;
+  }
+
+ `;

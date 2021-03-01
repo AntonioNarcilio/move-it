@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 const Button = styled.button`
+  width: 100%;
   height: 3rem;
 
   display: flex;
@@ -10,13 +11,20 @@ const Button = styled.button`
   border: 0;
   border-radius: 5px;
 
-  color: ${(props) => props.theme.colors.background};
-  outline: 0;
-
   font-size: 1rem;
   font-weight: 600;
 
-  transition: all 0.2s ease;
+  outline: 0;
+
+  background: ${(props) => props.theme.colors.green};
+  color: ${(props) => props.theme.colors.background};
+  box-shadow: 0px 4px ${(props) => props.theme.colors.greenShadow};
+
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: ${(props) => props.theme.colors.greenDark};
+  }
 
   &:active {
     box-shadow: 0 0;

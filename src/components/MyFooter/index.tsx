@@ -1,8 +1,8 @@
-import style from '../styles/components/MyFooter.module.css';
+import { ContainerMyFooter } from './styles';
 
 export function MyFooter() {
   return (
-    <div className={style.containerMyFooter}>
+    <ContainerMyFooter>
       <footer>
         Criado com ❤
         <a href="https://github.com/antonionarcilio" target="_blank" rel="noreferrer">
@@ -13,6 +13,6 @@ export function MyFooter() {
           Rocketseat 🚀
         </a>
       </footer>
-    </div>
+    </ContainerMyFooter>
   );
 }
