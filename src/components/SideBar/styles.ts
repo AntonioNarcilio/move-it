@@ -15,13 +15,13 @@ export const SideBarContainer = styled.div`
 
   ul li:nth-child(1) {
     width: 5rem;
-    height: calc(100vh / 4);
+    height: 40vh;
 
     display: flex;
     align-items: end;
 
-    position: relative;
-    top: 2rem;
+    /* position: relative; */
+    padding-top: 2rem;
   }
 
   ul li:nth-child(1) span img {
@@ -33,10 +33,9 @@ export const SideBarContainer = styled.div`
 
   ul li:nth-child(2){
     display: flex;
-    align-items: flex-end;
+    align-items: center;
 
-    height: calc(100vh / 4);
-    padding-bottom: 2rem;
+    height: 70px;
   }
 
   ul li:nth-child(2) span img {
@@ -44,16 +43,14 @@ export const SideBarContainer = styled.div`
     height: 36px;
     object-fit: cover;
     object-position: -48px 0px;
-    /* margin-left: 5rem; */
   }
 
 
   ul li:nth-child(3){
     display: flex;
-    align-items: flex-start;
+    align-items: center;
 
-    height: calc(100vh / 4);
-    padding-top: 2rem;
+    height: 70px;
   }
 
   ul li:nth-child(3) span img {
@@ -61,13 +58,8 @@ export const SideBarContainer = styled.div`
     height: 36px;
     object-fit: cover;
     object-position: -48px 0px;
-    /* margin-left: 5rem; */
   }
 
-/*  div:nth-child(2) span:nth-child(2),
- div:nth-child(3) span:nth-child(2) {
-  transform: rotate(-90deg)
-} */
 
 /* label div {
   position: absolute;
@@ -93,7 +85,7 @@ ul li label {
  input[type="radio"] {
   position: absolute;
   width: 5px;
-  height: 10%;
+  height: 70px;
   appearance: none;
   margin: 0;
   left: 0;
@@ -110,17 +102,47 @@ div:nth-of-type(1) {
 }
 div:nth-of-type(2) {
 }
-ul li input[type="radio"]:checked {
+
+ul li:nth-of-type(2) input[type="radio"]:checked {
   background: ${(props) => props.theme.colors.green};
-  top: 38%;
+  /* top: 38%; */
 }
+
+ul li:nth-of-type(2) input[type="radio"]:checked  ~ span img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  object-position: -98px 0px;
+}
+
+
 ul li:nth-of-type(3) input[type="radio"]:checked {
   background: ${(props) => props.theme.colors.green};
-  top: 52.2%;
+  /* top: 52.2%; */
 }
+
+ul li:nth-of-type(3) input[type="radio"]:checked  ~ span img {
+  width: 36px;
+  height: 36px;
+  object-fit: cover;
+  object-position: -98px 0px;
+}
+
+
+/* ul li:nth-child(3) span img {
+  object-position: -98px 0px;
+} */
+
 /*
 input[type="radio"]:checked + label {
   transform: translateX(0%);
   transition: transform 0.4s ease 0.4s;
 } */
+
+
+@media(max-width: 760px) {
+  display: none;
+}
+
+
 `;

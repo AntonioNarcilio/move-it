@@ -12,6 +12,7 @@ import { SideBar } from '../components/SideBar';
 import { HomeContainer, ContentContainer } from '../styles/pages/Home/styles';
 import { ChallengeProvider } from '../contexts/ChallengeContext';
 import { MyFooter } from '../components/MyFooter';
+import { Corner } from '../components/Corner';
 
 interface HomeProps {
   level: number;
@@ -32,11 +33,13 @@ export default function Home(props: HomeProps) {
         <SideBar />
 
         <ContentContainer>
+
           <Head>
             <title>Inicio | Move.it</title>
           </Head>
 
           <ExperienceBar />
+          <Corner />
 
           <CountdownProvider>
             <section>

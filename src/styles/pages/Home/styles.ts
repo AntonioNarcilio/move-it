@@ -24,17 +24,17 @@ export const ContentContainer = styled.div`
     align-content: center;
   }
 
-@media (max-width: 600px) {
-  height: auto;
+  @media (max-width: 600px) {
+    height: auto;
 
-  section {
-    flex: 1;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 6.25rem;
-    gap: 2rem;
-    margin-top: 4rem;
-    align-content: center;
+    section {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 6.25rem;
+      gap: 2rem;
+      margin-top: 4rem;
+      align-content: center;
+    }
   }
-}
 `;
