@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import Button from '../Button';
+import Button from '../Button/styles';
 
-export const ContainerChallengeBox = styled.div`
+export const ChallengeBoxContainer = styled.div`
   height: 101%;
 
   background: ${(props) => props.theme.colors.foreground};
@@ -57,24 +57,6 @@ export const ChallengeActive = styled.div`
   }
 `;
 
-export const ChallengeFailedButton = styled(Button)`
-  background: ${(props) => props.theme.colors.red};
-  box-shadow: 0px 4px ${(props) => props.theme.colors.redShadow};
-
-  &:hover {
-    background: ${(props) => props.theme.colors.redDark};
-  }
-`;
-
-export const ChallengeSucceededButton = styled(Button)`
-  background: ${(props) => props.theme.colors.green};
-  box-shadow: 0px 4px ${(props) => props.theme.colors.greenShadow};
-
-  &:hover {
-    background: ${(props) => props.theme.colors.greenDark};
-  }
-`;
-
 export const ChallengeNotActive = styled.div`
   display: flex;
   flex-direction: column;
@@ -101,3 +83,21 @@ export const ChallengeNotActive = styled.div`
   }
 
  `;
+
+export const ChallengeFailedButton = styled(Button)`
+  background: ${(props) => props.theme.colors.red};
+  box-shadow: 0px 4px ${(props) => props.theme.colors.redShadow};
+
+  &:hover {
+    background: ${(props) => props.theme.colors.redDark};
+  }
+`;
+
+export const ChallengeSucceededButton = styled(Button)`
+  background: ${(props) => props.theme.colors.green};
+  box-shadow: 0px 4px ${(props) => props.theme.colors.greenShadow};
+
+  &:hover {
+    background: ${(props) => props.theme.colors.greenDark};
+  }
+`;

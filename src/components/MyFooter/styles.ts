@@ -6,7 +6,7 @@ export const ContainerMyFooter = styled.div`
   justify-content: center;
 
   footer a {
-    color: var(--green);
+    color: ${(props) => props.theme.colors.green};
   }
 
 @media (max-width: 600px) {

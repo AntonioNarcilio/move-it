@@ -3,7 +3,7 @@ import { ChallengeContext } from '../../contexts/ChallengeContext';
 import { CountdownContext } from '../../contexts/CountdownContext';
 
 import {
-  ContainerChallengeBox,
+  ChallengeBoxContainer,
   ChallengeActive,
   ChallengeFailedButton,
   ChallengeSucceededButton,
@@ -25,7 +25,7 @@ export function ChallengeBox() {
   }
 
   return (
-    <ContainerChallengeBox>
+    <ChallengeBoxContainer>
       { activeChallenge ? (
         <ChallengeActive>
           <header>
@@ -75,6 +75,6 @@ export function ChallengeBox() {
           </p>
         </ChallengeNotActive>
       )}
-    </ContainerChallengeBox>
+    </ChallengeBoxContainer>
   );
 }

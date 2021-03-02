@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Button from '../Button';
+import Button from '../Button/styles';
 
 export const CountdownContainer = styled.div`
   display: flex;
@@ -52,29 +52,37 @@ export const CountdownButton = styled(Button)`
   background: ${(props) => props.theme.colors.purple};
   box-shadow: 0px 4px ${(props) => props.theme.colors.purpleShadow};
 
-
   &:not(:disabled):hover {
     background: ${(props) => props.theme.colors.purpleDark};
+  }
+`;
+
+export const CountdownButtonActive = styled(Button)`
+  height: 5rem;
+
+  margin-top: 2rem;
+  font-size: 1.25rem;
+
+  /* background: ${(props) => props.theme.colors.foreground};
+  color: ${(props) => props.theme.colors.red};
+  box-shadow: 0px 4px ${(props) => props.theme.colors.grayLine}; */
+
+
+  background: ${(props) => props.theme.colors.red};
+  color: ${(props) => props.theme.colors.background};
+  box-shadow: 0px 4px ${(props) => props.theme.colors.redShadow};
+
+  &:not(:disabled):hover {
+    background: ${(props) => props.theme.colors.redDark};
+    color: ${(props) => props.theme.colors.background};
+    /* box-shadow: 0px 4px ${(props) => props.theme.colors.redShadow}; */
   }
 
   &:disabled {
     background: ${(props) => props.theme.colors.foreground};
-    color: ${(props) => props.theme.colors.text};
+    color: ${(props) => props.theme.colors.red};
     box-shadow: 0px 4px ${(props) => props.theme.colors.grayLine};
     cursor: not-allowed;
-  }
-`;
-
-export const CountdownButtonActive = styled(CountdownButton)`
-  background: ${(props) => props.theme.colors.foreground};
-  color: ${(props) => props.theme.colors.red};
-  box-shadow: 0px 4px ${(props) => props.theme.colors.grayLine};
-
-
-  &:not(:disabled):hover {
-    background: ${(props) => props.theme.colors.red};
-    color: ${(props) => props.theme.colors.background};
-    box-shadow: 0px 4px ${(props) => props.theme.colors.redShadow};
   }
 
   &:not(:disabled):active {

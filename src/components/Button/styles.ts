@@ -20,11 +20,11 @@ const Button = styled.button`
   color: ${(props) => props.theme.colors.background};
   box-shadow: 0px 4px ${(props) => props.theme.colors.greenShadow};
 
-  transition: all 0.3s ease;
+  transition: all 0.4s ease;
 
-  &:hover {
+  /* &:hover {
     background: ${(props) => props.theme.colors.greenDark};
-  }
+  } */
 
   &:active {
     box-shadow: 0 0;
