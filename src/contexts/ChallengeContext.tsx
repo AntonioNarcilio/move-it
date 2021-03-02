@@ -100,7 +100,6 @@ export function ChallengeProvider({
 
       notification.onclick = ((event) => {
         event.preventDefault(); // prevent the browser from focusing the Notification's tab
-        // window.open('http://localhost:3000', '_blank');
         window.focus();
         notification.close();
       });

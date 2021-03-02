@@ -8,7 +8,8 @@ import { ExperienceBar } from '../components/ExperienceBar';
 import { Profile } from '../components/Profile';
 import { CountdownProvider } from '../contexts/CountdownContext';
 
-import { HomeContainer } from '../styles/pages/Home/styles';
+import { SideBar } from '../components/SideBar';
+import { HomeContainer, ContentContainer } from '../styles/pages/Home/styles';
 import { ChallengeProvider } from '../contexts/ChallengeContext';
 import { MyFooter } from '../components/MyFooter';
 
@@ -27,26 +28,33 @@ export default function Home(props: HomeProps) {
       challengesCompleted={props.challengesCompleted}
     >
       <HomeContainer>
-        <Head>
-          <title>Inicio | Move.it</title>
-        </Head>
 
-        <ExperienceBar />
+        <SideBar />
 
-        <CountdownProvider>
-          <section>
-            <div>
-              <Profile />
-              <CompleteChallenges />
-              <Countdown />
-            </div>
-            <div>
-              <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
+        <ContentContainer>
+          <Head>
+            <title>Inicio | Move.it</title>
+          </Head>
 
-        <MyFooter />
+          <ExperienceBar />
+
+          <CountdownProvider>
+            <section>
+              <div>
+                <Profile />
+                <CompleteChallenges />
+                <Countdown />
+              </div>
+              <div>
+                <ChallengeBox />
+              </div>
+            </section>
+          </CountdownProvider>
+
+          <MyFooter />
+
+        </ContentContainer>
+
       </HomeContainer>
 
     </ChallengeProvider>
