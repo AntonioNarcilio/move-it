@@ -6,7 +6,7 @@ export const HomeContainer = styled.div`
   flex-direction: row;
   align-items: center; */
   display: grid;
-  grid-template-columns: 0fr 1fr;
+  grid-template-columns: 5.2rem auto;
 
 
   @media (max-width: 759px) {

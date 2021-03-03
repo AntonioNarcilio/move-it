@@ -29,6 +29,7 @@
 				"allowTaggedTemplates": true
 			}
 		],
+    "import/no-webpack-loader-syntax": "off",
 		"import/extensions": [
 			"error",
 			"ignorePackages",
