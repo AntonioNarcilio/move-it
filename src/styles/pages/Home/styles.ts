@@ -2,9 +2,18 @@ import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
   width: 100%;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: 0fr 1fr;
+
+
+  @media (max-width: 759px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
 `;
 
 export const ContentContainer = styled.div`

@@ -26,4 +26,8 @@ export const CornerContent = styled.div`
   & a:hover {
     background: ${(props) => props.theme.colors.cyan};
   }
+
+  @media(max-width: 1158px) {
+    display: none;
+  }
 `;
