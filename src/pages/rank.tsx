@@ -1,6 +1,8 @@
+import { Corner } from '../components/Corner';
+import { MyFooter } from '../components/MyFooter';
 import { SideBar } from '../components/SideBar';
 
-import { RankContainer, ContentRankContainer } from '../styles/pages/Rank/styles'
+import { RankContainer, ContentRankContainer } from '../styles/pages/Rank/styles';
 
 export default function Rank() {
   return (
@@ -10,10 +12,13 @@ export default function Rank() {
 
       <ContentRankContainer>
 
+        <Corner />
+
         <h1>Em Breve ...</h1>
 
-      </ContentRankContainer>
+        <MyFooter />
 
+      </ContentRankContainer>
 
     </RankContainer>
   );
