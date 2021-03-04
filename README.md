@@ -61,6 +61,18 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
  <img alt="figma" title="figma" src="https://img.shields.io/static/v1?label=Figma&message=Project%20prototyping&style=social&logo=Figma&logoColor=F24E1E" />
 </a>
 
+<br>
+
+<a href="https://www.framer.com/motion/">
+ <img alt="framer-motion" title="framer-motion" src="https://img.shields.io/static/v1?label=Framer-Motion&message=Motion%20library%20for%20React&style=social&logo=Framer&logoColor=0055FF" />
+</a>
+
+<br>
+
+<a href="https://lottiefiles.com">
+ <img alt="Lottie Files" title="Lottie Files" src="https://img.shields.io/static/v1?label=Lottie%20Files&message=Animations&style=social&logo=&logoColor=F24E1E" />
+</a>
+
 <h2 id="Projeto">
 👔 Projeto
 </h2>
