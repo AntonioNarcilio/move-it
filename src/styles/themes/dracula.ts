@@ -19,7 +19,7 @@ export default {
     pinkDark: '#bb508d',
     pinkShadow: '#f562b5',
     purple: '#bd93f9',
-    purpleDark: '#b98cf8',
+    purpleDark: '#b380f9',
     purpleShadow: '#6e5294',
     blueTwitter: '#2aa9e0',
     cyan: '#8be9fd',
