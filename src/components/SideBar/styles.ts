@@ -140,6 +140,14 @@ export const Indicador = styled.div`
     border-radius: 0 5px 5px 0;
 
     background: ${(props) => props.theme.colors.green};
+
+  @media(max-width: 759px) {
+    top: calc(10% - 5px);
+    border-radius: 5px 5px 0px 0px;
+    left: auto;
+    width: 70px;
+    height: 0.3rem;
+  }
 `;
 
 const SelectPageButton = styled.button`
