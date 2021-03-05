@@ -1,10 +1,14 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 body {
@@ -41,5 +45,12 @@ a {
   }
 }
 
+`;
 
+export const GlobalContainer = styled.div`
+  margin-left: calc(1024px / 15);
+
+  @media (max-width: 720px) {
+    margin: 0 auto;
+  }
 `;

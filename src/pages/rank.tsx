@@ -1,25 +1,28 @@
 import { Corner } from '../components/Corner';
 import { MyFooter } from '../components/MyFooter';
 import { SideBar } from '../components/SideBar';
+import { GlobalContainer } from '../styles/global';
 
-import { RankContainer, ContentRankContainer } from '../styles/pages/Rank/styles';
+import { ContentRankContainer } from '../styles/pages/Rank/styles';
 
 export default function Rank() {
   return (
-    <RankContainer>
-
+    <>
       <SideBar />
 
-      <ContentRankContainer>
+      <GlobalContainer>
 
-        <Corner />
+        <ContentRankContainer>
 
-        <h1>Em Breve ...</h1>
+          <Corner />
 
-        <MyFooter />
+          <h1>Em Breve ...</h1>
 
-      </ContentRankContainer>
+          <MyFooter />
 
-    </RankContainer>
+        </ContentRankContainer>
+
+      </GlobalContainer>
+    </>
   );
 }

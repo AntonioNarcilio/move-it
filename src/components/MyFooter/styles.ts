@@ -9,10 +9,17 @@ export const ContainerMyFooter = styled.div`
     color: ${(props) => props.theme.colors.green};
   }
 
-@media (max-width: 600px) {
-  footer {
-    margin-top: 2.5rem;
-    font-size: 0.9rem;
+  @media (max-width: 825px) {
+    footer {
+      margin-top: 2.5rem;
+      font-size: 0.9rem;
+    }
   }
-}
+
+  @media (max-height: 412px) {
+    footer {
+      padding-top: 4rem;
+      padding-bottom: 3rem;
+    }
+  }
 `;

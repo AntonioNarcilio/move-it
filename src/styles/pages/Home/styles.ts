@@ -1,23 +1,7 @@
 import styled from 'styled-components';
 
-export const HomeContainer = styled.div`
-  width: 100%;
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
-  display: grid;
-  grid-template-columns: 5.2rem auto;
-
-
-  @media (max-width: 759px) {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-`;
-
-export const ContentContainer = styled.div`
-  height: 100vh;
+export const ContentHomeContainer = styled.div`
+  min-height: 109vh;
   max-width: 992px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
@@ -33,7 +17,7 @@ export const ContentContainer = styled.div`
     align-content: center;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 825px) {
     height: auto;
 
     section {
@@ -44,6 +28,12 @@ export const ContentContainer = styled.div`
       gap: 2rem;
       margin-top: 4rem;
       align-content: center;
+    }
+  }
+
+  @media(max-height: 412px) {
+    section {
+      padding-top: 3.5rem;
     }
   }
 `;

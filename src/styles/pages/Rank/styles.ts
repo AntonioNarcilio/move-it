@@ -1,21 +1,5 @@
 import styled from 'styled-components';
 
-export const RankContainer = styled.div`
-  width: 100%;
-  /* display: flex;
-  flex-direction: row;
-  align-items: center; */
-  display: grid;
-  grid-template-columns: 5.2rem auto;
-
-
-  @media (max-width: 759px) {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-`;
-
 export const ContentRankContainer = styled.div`
   height: 100vh;
   max-width: 992px;
