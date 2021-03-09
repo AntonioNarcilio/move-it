@@ -6,7 +6,7 @@
 
 <h4 align="center">
 
-[Descrição](#desc) ✦ [Tecnologias](#tec) ✦ [Projeto](#Projeto) ✦ Prototipagem ✦ Rodando localmente ✦ [Licença](#lic)
+[Descrição](#desc) ✦ [Tecnologias](#tec) ✦ [Projeto](#Projeto) ✦ Prototipagem ✦ [Rodando localmente](#local) ✦ [Licença](#lic)
 
 </h4>
 
@@ -17,7 +17,7 @@
 </h2>
 
 <p align="justify">
-O <b>Move it</b> é uma aplicação desenvolvido com o intuito de ajudar aqueles que passam um bom tempo à frente do computador, como é o caso de nós <i>desenvolvedores</i> 👨‍💻.
+O <b>Move it</b> é uma aplicação desenvolvida com o intuito de ajudar aqueles que passam um bom tempo à frente do computador, como é o caso de nós <i>desenvolvedores</i> 👨‍💻.
 <br/>
 O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo certos problemas gerados por esse uso excessivo, seja eles nas articulações ou nos olhos gerando problema de visão. Com isso o <i>Move it</i> entra para ajudar, unido a <i><u> técnica de pomodoro</u></i> com os exercícios/alongamentos que "ajudam a evitar esse problema citado acima". Tudo isso junto em uma aplicação que usa a gamificação para deixar os desafios mais divertidos.
 </p>
@@ -80,6 +80,36 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 <a href="https://antonionarcilio-move-it.vercel.app">
 <img title="move.it" src="./.github/moveit-display.png">
 </a>
+
+<br>
+
+<h2 id="local">
+🎡 Rodando aplicação localmente
+</h2>
+
+> **⚠ Atenção !** Antes de prosseguir com o passo a passo abaixo você precisa ter instalado em sua máquina o gerenciador de pacote [yarn](https://classic.yarnpkg.com/en/docs/install).
+
+```shell
+# 📝 Clonando o repositório e entrando no diretório criado
+
+$ git clone git@github.com:antonionarcilio/move-it.git && cd move-it
+
+
+# 📝 Baixando/Instalando dependências
+
+$ yarn install
+
+
+# 📝 Rodando Aplicação
+
+$ yarn dev
+
+
+# Pronto se tudo ocorreu conforme o esperado 😁 a aplicação estará rodando na porta 3000. Basta acessar o endereço no navegador http://localhost:3000 e você verá a aplicação funcionando
+
+```
+
+<br>
 
 <h2 id="lic">
 📃 Licença
