@@ -6,7 +6,7 @@
 
 <h4 align="center">
 
-[Descrição](#desc) ✦ [Tecnologias](#tec) ✦ [Projeto](#Projeto) ✦ Prototipagem ✦ [Rodando localmente](#local) ✦ [Licença](#lic)
+[Descrição](#desc) ✦ [Tecnologias](#tec) ✦ [Projeto](#Projeto) ✦ [Prototipagem](#prototipagem) ✦ [Rodando localmente](#local) ✦ [Licença](#lic)
 
 </h4>
 
@@ -80,34 +80,50 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 <a href="https://antonionarcilio-move-it.vercel.app">
 <img title="move.it" src="./.github/moveit-display.png">
 </a>
+<h6 align="center">Clique na imagem para visualizar a aplicação</h6>
+
+<br>
+
+<h2 id="prototipagem">
+✈ Prototipagem
+</h2>
+
+<a href="https://www.figma.com/file/cniET9Xo3ZIwoqJ4PWcovu/Move.it-1.0?node-id=160%3A2761">
+<img title="move.it" src="./.github/prototipagem.png">
+</a>
+<h6 align="center">Clique na imagem para ver o projeto no figma</h6>
 
 <br>
 
 <h2 id="local">
-🎡 Rodando aplicação localmente
+⚛ Rodando aplicação localmente
 </h2>
 
-> **⚠ Atenção !** Antes de prosseguir com o passo a passo abaixo você precisa ter instalado em sua máquina o gerenciador de pacote [yarn](https://classic.yarnpkg.com/en/docs/install).
+> **⚠ Atenção !** <br> Antes de prosseguir com o passo a passo abaixo você precisa ter instalado em sua máquina o gerenciador de pacote [yarn](https://classic.yarnpkg.com/en/docs/install).
+
+<br>
+
+> 📝 Clonando o repositório e entrando no diretório criado.
 
 ```shell
-# 📝 Clonando o repositório e entrando no diretório criado
-
-$ git clone git@github.com:antonionarcilio/move-it.git && cd move-it
-
-
-# 📝 Baixando/Instalando dependências
-
-$ yarn install
-
-
-# 📝 Rodando Aplicação
-
-$ yarn dev
-
-
-# Pronto se tudo ocorreu conforme o esperado 😁 a aplicação estará rodando na porta 3000. Basta acessar o endereço no navegador http://localhost:3000 e você verá a aplicação funcionando
-
+git clone git@github.com:antonionarcilio/move-it.git && cd move-it
 ```
+
+> 📝 Baixando / Instalando dependências.
+
+```shell
+yarn install
+```
+
+> 📝 Rodando Aplicação
+
+```shell
+yarn dev
+```
+
+> Pronto 🎉 se tudo ocorreu conforme o esperado 😁 a aplicação estará
+> rodando na porta 3000. Basta acessar o endereço no navegador
+> http://localhost:3000 e você verá a aplicação funcionando.
 
 <br>
 
