@@ -13,8 +13,6 @@
     "lint": "eslint ./ --fix"
   },
   "dependencies": {
-    "@types/react-lottie": "^1.2.5",
-    "@types/styled-components": "^5.1.7",
     "framer-motion": "^3.7.0",
     "js-cookie": "^2.2.1",
     "next": "10.0.7",
@@ -28,6 +26,8 @@
     "@types/node": "^14.14.31",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
+    "@types/react-lottie": "^1.2.5",
+    "@types/styled-components": "^5.1.7",
     "@typescript-eslint/eslint-plugin": "^4.15.2",
     "@typescript-eslint/parser": "^4.15.2",
     "babel-plugin-styled-components": "^1.12.0",

@@ -52,8 +52,10 @@ export const CountdownButton = styled(Button)`
   background: ${(props) => props.theme.colors.purple};
   box-shadow: 0px 4px ${(props) => props.theme.colors.purpleShadow};
 
+
   &:not(:disabled):hover {
     background: ${(props) => props.theme.colors.purpleDark};
+    box-shadow: 0px 2px ${(props) => props.theme.colors.purpleShadow};
   }
 `;
 
@@ -75,7 +77,7 @@ export const CountdownButtonActive = styled(Button)`
   &:not(:disabled):hover {
     background: ${(props) => props.theme.colors.redDark};
     color: ${(props) => props.theme.colors.background};
-    /* box-shadow: 0px 4px ${(props) => props.theme.colors.redShadow}; */
+    box-shadow: 0px 2px ${(props) => props.theme.colors.redShadow};
   }
 
   &:disabled {
@@ -83,11 +85,12 @@ export const CountdownButtonActive = styled(Button)`
     color: ${(props) => props.theme.colors.red};
     box-shadow: 0px 4px ${(props) => props.theme.colors.grayLine};
     cursor: not-allowed;
+    transform: translateY(0px);
   }
 
-  &:not(:disabled):active {
+  /* &:not(:disabled):active {
     box-shadow: 0 0;
     transform: translateY(4px);
-  }
+  } */
 
 `;

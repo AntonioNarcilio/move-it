@@ -22,14 +22,16 @@ const Button = styled.button`
 
   transition: all 0.4s ease;
 
-  /* &:hover {
-    background: ${(props) => props.theme.colors.greenDark};
-  } */
+  &:hover {
+    /* background: ${(props) => props.theme.colors.greenDark}; */
+    /* box-shadow: 0px 2px ${(props) => props.theme.colors.redShadow}; */
+    transform: translateY(2px);
+  }
 
-  &:active {
+  /* &:active {
     box-shadow: 0 0;
     transform: translateY(4px);
-  }
+  } */
 `;
 
 export default Button;

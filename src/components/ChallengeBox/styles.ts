@@ -90,6 +90,8 @@ export const ChallengeFailedButton = styled(Button)`
 
   &:hover {
     background: ${(props) => props.theme.colors.redDark};
+    box-shadow: 0px 2px ${(props) => props.theme.colors.redShadow};
+    /* transform: translateY(2px); */
   }
 `;
 
@@ -99,5 +101,6 @@ export const ChallengeSucceededButton = styled(Button)`
 
   &:hover {
     background: ${(props) => props.theme.colors.greenDark};
+    box-shadow: 0px 2px ${(props) => props.theme.colors.greenShadow};
   }
 `;
