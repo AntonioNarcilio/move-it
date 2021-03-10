@@ -102,7 +102,7 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 
 <br>
 
-<h2>🖥 Algumas telas da aplicação</h2>
+<h2>🖥 Capturas de tela</h2>
 
 <table>
   <tr align="center">
