@@ -73,6 +73,24 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
  <img alt="Lottie Files" title="Lottie Files" src="https://img.shields.io/static/v1?label=Lottie%20Files&message=Animations&style=social&logo=&logoColor=F24E1E" />
 </a>
 
+<br>
+
+<h2>⚔ Funcionalidades</h2>
+
+- [x] Opção de `Iniciar um ciclo` para receber um desafio.
+- [x] `Barra de progresso` (xp) do usuário atual.
+- [x] `Numero de desafios concluído`.
+- [x] `Receber um desafio`, quando o tempo estipulado (25 min) do ciclo chegar ao fim.
+- [x] `Notificação` quando o ciclo chega ao fim.
+- [x] Opções de `desafio concluído` ou `desafio não concluído` ao receber um desafio.
+- [x] Disponibilidade para `iniciar um novo ciclo` ao selecionar desafio não concluído.
+- [x] `Receber experiencia` ao concluir um desafio.
+- [x] `Subir de nível` ao obter a quantidade estipulada para ir para o próximo level.
+- [x] `Animação` ao subir de level.
+- [x] `Navegação` entre pagina pelo side bar.
+
+<br>
+
 <h2 id="Projeto">
 👔 Projeto
 </h2>
@@ -81,6 +99,22 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 <img title="move.it" src="./.github/moveit-display.png">
 </a>
 <h6 align="center">Clique na imagem para visualizar a aplicação</h6>
+
+<br>
+
+<h2>🖥 Algumas telas da aplicação</h2>
+
+<table>
+  <tr align="center">
+    <td><h5>Notificação</h5></td>
+    <td><h5>Subindo de level</h5></td>
+  </tr>
+  <tr>
+    <td><img src="./.github/notification.webp"></td>
+    <td><img src="./.github/levelup.webp"></td>
+  </tr>
+  <tr>
+</table>
 
 <br>
 
