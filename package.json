@@ -7,6 +7,7 @@
   },
   "scripts": {
     "dev": "next dev",
+    "setup": "yarn install",
     "build": "next build",
     "start": "next start",
     "eslint:init": "eslint --init",
