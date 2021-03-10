@@ -8,6 +8,20 @@
 
 [Descrição](#desc) ✦ [Tecnologias](#tec) ✦ [Projeto](#Projeto) ✦ [Prototipagem](#prototipagem) ✦ [Rodando localmente](#local) ✦ [Licença](#lic)
 
+<br>
+
+<img alt="GitHub repo size" title="GitHub repo size" src="https://img.shields.io/github/repo-size/AntonioNarcilio/Move-it?color=50fa7b&labelColor=282a36&logo=GitHub&logoColor=white" />
+
+<a href="https://github.com/AntonioNarcilio/move-it/blob/master/LICENSE">
+ <img src="https://img.shields.io/github/license/AntonioNarcilio/Move-it?label=license&color=ff5555&labelColor=282a36" alt="license"/>
+</a>
+
+<img alt="GitHub last commit" title="GitHub last commit" src="https://img.shields.io/github/last-commit/AntonioNarcilio/Move-it?&color=50fa7b&labelColor=282a36" />
+
+<img alt="GitHub language coun" title="GitHub language coun" src="https://img.shields.io/github/languages/count/AntonioNarcilio/Move-it?&color=50fa7b&labelColor=282a36" />
+
+<br>
+
 </h4>
 
 <br>
@@ -133,7 +147,7 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 ⚛ Rodando aplicação localmente
 </h2>
 
-> **⚠ Atenção !** <br> Antes de prosseguir com o passo a passo abaixo você precisa ter instalado em sua máquina o gerenciador de pacote [yarn](https://classic.yarnpkg.com/en/docs/install).
+> **⚠ Atenção !** <br> Antes de prosseguir com o passo a passo abaixo você precisa ter instalado em sua máquina o gerenciador de pacote [Yarn](https://classic.yarnpkg.com/en/docs/install) e o [Git](https://git-scm.com).
 
 <br>
 
