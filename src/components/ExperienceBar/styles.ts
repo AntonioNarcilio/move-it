@@ -12,6 +12,8 @@ export const XpBar = styled.header`
   display: flex;
   align-items: center;
 
+  /* padding-bottom: 2rem; */
+
   span {
     font-size: 1rem;
   }

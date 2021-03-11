@@ -7,9 +7,9 @@ export default createGlobalStyle`
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
     width: 0px;
-}
+} */
 
 body {
   background-color: ${(props) => props.theme.colors.background};

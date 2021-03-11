@@ -5,6 +5,8 @@ export const ContainerMyFooter = styled.div`
   align-items: center;
   justify-content: center;
 
+  padding-bottom: 4rem;
+
   footer a {
     color: ${(props) => props.theme.colors.green};
   }

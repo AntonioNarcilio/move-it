@@ -1,6 +1,7 @@
 /* eslint-disable react/destructuring-assignment */
 import Head from 'next/head';
 import { GetServerSideProps } from 'next';
+
 import { ChallengeBox } from '../components/ChallengeBox';
 import { CompleteChallenges } from '../components/CompleteChallenges';
 import { Countdown } from '../components/Countdown';
@@ -24,6 +25,7 @@ interface HomeProps {
 export default function Home(props: HomeProps) {
   // console.log(props);
   return (
+
     <ChallengeProvider
       level={props.level}
       currentExperience={props.currentExperience}
@@ -63,6 +65,7 @@ export default function Home(props: HomeProps) {
       </GlobalContainer>
 
     </ChallengeProvider>
+
   );
 }
 

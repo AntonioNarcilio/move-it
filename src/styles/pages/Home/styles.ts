@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const ContentHomeContainer = styled.div`
-  min-height: 109vh;
+  height: 100vh;
+  /* min-height: 109vh; */
   max-width: 992px;
   margin: 0 auto;
   padding: 2.5rem 2rem;
@@ -9,16 +10,20 @@ export const ContentHomeContainer = styled.div`
   display: flex;
   flex-direction: column;
 
+
   section {
     flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6.25rem;
     align-content: center;
+
+
+    padding: 5rem 0 6rem 0;
   }
 
   @media (max-width: 825px) {
-    height: auto;
+    /* height: auto; */
 
     section {
       flex: 1;
@@ -32,6 +37,7 @@ export const ContentHomeContainer = styled.div`
   }
 
   @media(max-height: 412px) {
+
     section {
       padding-top: 3.5rem;
     }

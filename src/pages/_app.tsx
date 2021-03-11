@@ -1,5 +1,8 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-props-no-spreading */
+
+import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
+import 'overlayscrollbars/css/OverlayScrollbars.css';
 import { ThemeProvider } from 'styled-components';
 
 import Head from 'next/head';
@@ -9,6 +12,7 @@ import { SelectPageProvider } from '../contexts/SelectPageButtonContext';
 
 function MyApp({ Component, pageProps }) {
   return (
+
     <ThemeProvider theme={dracula}>
 
       <Head>
@@ -41,11 +45,29 @@ function MyApp({ Component, pageProps }) {
 
       <GlocalStyles />
 
-      <SelectPageProvider>
-        <Component {...pageProps} />
-      </SelectPageProvider>
+      <OverlayScrollbarsComponent
+        className="os-theme-light"
+        options={{
+          scrollbars: {
+            visibility: 'auto',
+            autoHide: 'never',
+            autoHideDelay: 800,
+            dragScrolling: true,
+            clickScrolling: false,
+            touchSupport: true,
+            snapHandle: false,
+          },
+        }}
+      >
+
+        <SelectPageProvider>
+          <Component {...pageProps} />
+        </SelectPageProvider>
+
+      </OverlayScrollbarsComponent>
 
     </ThemeProvider>
+
   );
 }
 
