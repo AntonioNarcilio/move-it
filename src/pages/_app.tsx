@@ -1,9 +1,10 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-props-no-spreading */
 
+import { ThemeProvider } from 'styled-components';
+
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 import 'overlayscrollbars/css/OverlayScrollbars.css';
-import { ThemeProvider } from 'styled-components';
 
 import Head from 'next/head';
 import dracula from '../styles/themes/dracula';
@@ -50,12 +51,16 @@ function MyApp({ Component, pageProps }) {
         options={{
           scrollbars: {
             visibility: 'auto',
-            autoHide: 'never',
+            autoHide: 'move',
             autoHideDelay: 800,
             dragScrolling: true,
             clickScrolling: false,
             touchSupport: true,
             snapHandle: false,
+          },
+          nativeScrollbarsOverlaid: {
+            showNativeScrollbars: false,
+            initialize: true,
           },
         }}
       >
