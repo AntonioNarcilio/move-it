@@ -43,3 +43,5 @@ export const ContentHomeContainer = styled.div`
     }
   }
 `;
+
+// export default ContentHomeContainer;

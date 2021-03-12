@@ -9,8 +9,8 @@ import { ExperienceBar } from '../components/ExperienceBar';
 import { Profile } from '../components/Profile';
 import { CountdownProvider } from '../contexts/CountdownContext';
 
-import { SideBar } from '../components/SideBar';
 import { ContentHomeContainer } from '../styles/pages/Home/styles';
+
 import { ChallengeProvider } from '../contexts/ChallengeContext';
 import { MyFooter } from '../components/MyFooter';
 import { Corner } from '../components/Corner';
@@ -31,8 +31,6 @@ export default function Home(props: HomeProps) {
       currentExperience={props.currentExperience}
       challengesCompleted={props.challengesCompleted}
     >
-
-      {/* <SideBar /> */}
 
       <GlobalContainer>
 

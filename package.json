@@ -14,10 +14,10 @@
     "lint": "eslint ./ --fix"
   },
   "dependencies": {
-    "@types/overlayscrollbars": "^1.12.0",
     "framer-motion": "^3.7.0",
     "js-cookie": "^2.2.1",
     "next": "10.0.7",
+    "nprogress": "^0.2.0",
     "overlayscrollbars": "^1.13.1",
     "overlayscrollbars-react": "^0.2.2",
     "react": "17.0.1",
@@ -29,6 +29,7 @@
   "devDependencies": {
     "@types/js-cookie": "^2.2.6",
     "@types/node": "^14.14.31",
+    "@types/overlayscrollbars": "^1.12.0",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.1",
     "@types/react-lottie": "^1.2.5",

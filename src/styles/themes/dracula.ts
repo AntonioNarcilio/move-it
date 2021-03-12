@@ -11,6 +11,7 @@ export default {
     text: '#f8f8f2',
     textHighlight: '#50fa7b',
     textTitle: '#f8f8f2',
+    shadow: 'rgba(248, 248, 242, 0.74)',
     buttonCountdown: '#bd93f9',
     buttonCountdownDark: '#b380f9',
     buttonCountdownShadow: '#6e5294',

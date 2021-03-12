@@ -16,6 +16,7 @@ declare module 'styled-components' {
       text: string;
       textHighlight: string;
       textTitle: string;
+      shadow: string;
       buttonCountdown: string;
       buttonCountdownDark: string;
       buttonCountdownShadow: string;

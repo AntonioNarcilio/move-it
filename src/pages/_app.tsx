@@ -1,21 +1,35 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-props-no-spreading */
-
 import { ThemeProvider, DefaultTheme } from 'styled-components';
 
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 import 'overlayscrollbars/css/OverlayScrollbars.css';
 
 import Head from 'next/head';
-import usePersistedState from '../utils/usePersistedState';
+import Router from 'next/router'; // progress bar
+import NProgress from 'nprogress'; // progress bar
+import usePersistedState from '../utils/usePersistedState'; // theme selected
 
 import dracula from '../styles/themes/dracula';
 import nlw from '../styles/themes/nlw';
 
 import GlocalStyles from '../styles/global';
 
-import { SelectPageProvider } from '../contexts/SelectPageButtonContext';
+import { SelectPageProvider } from '../contexts/SelectPageButtonContext'; // sideBar
 import { SideBar } from '../components/SideBar';
+
+import 'nprogress/nprogress.css'; // estilos padrão
+import '../styles/nprogressbar.css'; // customizado
+
+NProgress.configure({
+  minimum: 0.3,
+  easing: 'ease',
+  speed: 300,
+  showSpinner: false,
+});
+Router.events.on('routeChangeStart', () => NProgress.start());
+Router.events.on('routeChangeComplete', () => NProgress.done());
+Router.events.on('routeChangeError', () => NProgress.done());
 
 function MyApp({ Component, pageProps }) {
   const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', dracula);

@@ -22,7 +22,7 @@ import {
 } from './styles';
 
 interface SideBarProps {
-  toggleTheme: () => void;
+  toggleTheme: () => void; // no _app
 }
 
 export function SideBar({ toggleTheme }: SideBarProps) {
@@ -30,7 +30,7 @@ export function SideBar({ toggleTheme }: SideBarProps) {
     isSelectedHome, isSelectedRank, selectHomePage, selectRankPage,
   } = useContext(SelectPageButtonContext);
 
-  const { title } = useContext(ThemeContext);
+  const { colors, title } = useContext(ThemeContext);
 
   return (
     <SideBarContainer>
@@ -100,7 +100,7 @@ export function SideBar({ toggleTheme }: SideBarProps) {
           <Switch
             onChange={toggleTheme}
             checked={title === 'dracula'}
-            boxShadow="0px 0px 4px 1px rgba(65, 65, 65, 0.644)"
+            boxShadow={`0px 0px 4px 1px ${colors.shadow}`}
             activeBoxShadow="0px 0px 1px 4px rgba(255, 238, 0, 0)"
             uncheckedIcon={(
               <SvgMoon
@@ -152,7 +152,7 @@ export function SideBar({ toggleTheme }: SideBarProps) {
             width={45}
             handleDiameter={20}
             offColor="#393A59"
-            onColor="#008FE0"
+            onColor="#666666"
           />
         </li>
       </ul>

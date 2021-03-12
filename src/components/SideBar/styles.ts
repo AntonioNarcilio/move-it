@@ -9,6 +9,11 @@ export const SideBarContainer = styled.div`
   z-index: 99;
 
   background: ${(props) => props.theme.colors.foreground};
+  /* background: linear-gradient(0deg,
+      ${(props) => props.theme.colors.grayLine} -50%,
+      ${(props) => props.theme.colors.foreground} 100%
+      ); */
+
 
   ul {
     display: flex;
@@ -68,6 +73,7 @@ export const SideBarContainer = styled.div`
     height: 2.25rem;
   }
 
+  /* Ícone Switch */
   ul li:nth-child(4){
     display: flex;
     align-items: flex-end;
@@ -99,12 +105,14 @@ export const SideBarContainer = styled.div`
       height: 10vh;
 
       display: flex;
+      flex-direction: row;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-between;
     }
 
+
     ul li:nth-child(1) {
-      width: 41rem;
+      width: 100%;
       height: auto;
 
       display: flex;
@@ -115,11 +123,9 @@ export const SideBarContainer = styled.div`
       margin: 0;
     }
 
-    ul li:nth-child(1) span img {
+    ul li:nth-child(1) span svg {
       width: 2.25rem;
       height: 2.25rem;
-      object-fit: cover;
-      object-position: 0 0;
     }
 
     ul li:nth-child(2){
@@ -133,6 +139,19 @@ export const SideBarContainer = styled.div`
       align-items: center;
 
       padding: 0.5rem;
+    }
+
+    /* Ícone Switch */
+    ul li:nth-child(4){
+      width: 100%;
+      height: auto;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      margin-bottom: 0;
+      padding-right: 1rem;
     }
 
     ul li label {
