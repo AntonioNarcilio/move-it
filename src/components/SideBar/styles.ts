@@ -10,6 +10,15 @@ export const SideBarContainer = styled.div`
 
   background: ${(props) => props.theme.colors.foreground};
 
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    height: 100%;
+  }
+
   ul li {
     display: flex;
     align-items: center;
@@ -18,13 +27,14 @@ export const SideBarContainer = styled.div`
 
   ul li:nth-child(1) {
     width: 5rem;
-    height: 41vh;
+    /* height: 41vh; */
+
+    height: 100%;
 
     display: flex;
     align-items: end;
 
-    /* position: relative; */
-    padding-top: 2rem;
+    margin-top: 20%;
   }
 
   /* Logo */
@@ -32,15 +42,17 @@ export const SideBarContainer = styled.div`
     width: 2.25rem;
     height: 2.25rem;
   }
+  ul li:nth-child(1) span svg path{
+    fill: ${(props) => props.theme.colors.logo};
+  }
 
   /* Ícone Home */
   ul li:nth-child(2){
     display: flex;
     align-items: center;
-
     height: 70px;
   }
-  ul li:nth-child(2) span svg path {
+  ul li:nth-child(2) span svg {
     width: 2.25rem;
     height: 2.25rem;
   }
@@ -51,9 +63,16 @@ export const SideBarContainer = styled.div`
     align-items: center;
     height: 70px;
   }
-  ul li:nth-child(3) span svg path {
+  ul li:nth-child(3) span svg {
     width: 2.25rem;
     height: 2.25rem;
+  }
+
+  ul li:nth-child(4){
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    margin-bottom: 20%;
   }
 
   ul li label {
@@ -62,7 +81,6 @@ export const SideBarContainer = styled.div`
     justify-content: center;
     cursor: pointer;
   }
-
 
   @media(max-width: 720px) {
     width: 100%;
@@ -144,7 +162,7 @@ export const Indicador = styled.div`
     opacity: 0;
     border-radius: 0 5px 5px 0;
 
-    background: ${(props) => props.theme.colors.green};
+    background: ${(props) => props.theme.colors.sideBarActive};
 
   @media(max-width: 720px) {
     width: 60px;
@@ -180,7 +198,7 @@ export const SelectPageButtonActive = styled(SelectPageButton)`
   }
 
   svg path {
-    stroke: ${(props) => props.theme.colors.green};
+    stroke: ${(props) => props.theme.colors.sideBarActive};
   }
 `;
 
@@ -189,14 +207,14 @@ export const SelectPageButtonNoActive = styled(SelectPageButton)`
     opacity: 1;
   }
   svg path {
-    stroke: ${(props) => props.theme.colors.purple};
+    stroke: ${(props) => props.theme.colors.sideBarDisable};
 
     transition: all 0.4s ease;
   }
 
   &:hover {
     svg path {
-      stroke: ${(props) => props.theme.colors.purpleDark};
+      stroke: ${(props) => props.theme.colors.sideBarDisable};
     }
   }
 `;

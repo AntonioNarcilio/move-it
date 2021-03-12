@@ -42,7 +42,7 @@ export const ChallengeActive = styled.div`
   main strong {
     font-size: 2rem;
     font-weight: 600;
-    color: ${(props) => props.theme.colors.title};
+    color: ${(props) => props.theme.colors.textHighlight};
     margin: 1.5rem 0 1rem;
   }
 
@@ -78,8 +78,14 @@ export const ChallengeNotActive = styled.div`
     margin-top: 3rem;
   }
 
-  p img {
+  p svg {
     margin-bottom: 1rem;
+  }
+  p svg path, p svg rect {
+    fill: ${(props) => props.theme.colors.iconLevel};
+  }
+  p svg path:nth-child(8), p svg path:nth-child(9) {
+    fill: ${(props) => props.theme.colors.iconLevelDark};
   }
 
  `;

@@ -1,6 +1,6 @@
 import { Corner } from '../components/Corner';
 import { MyFooter } from '../components/MyFooter';
-import { SideBar } from '../components/SideBar';
+// import { SideBar } from '../components/SideBar';
 import { GlobalContainer } from '../styles/global';
 
 import { ContentRankContainer } from '../styles/pages/Rank/styles';
@@ -8,7 +8,7 @@ import { ContentRankContainer } from '../styles/pages/Rank/styles';
 export default function Rank() {
   return (
     <>
-      <SideBar />
+      {/* <SideBar /> */}
 
       <GlobalContainer>
 

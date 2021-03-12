@@ -1,20 +1,42 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-props-no-spreading */
 
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider, DefaultTheme } from 'styled-components';
 
 import { OverlayScrollbarsComponent } from 'overlayscrollbars-react';
 import 'overlayscrollbars/css/OverlayScrollbars.css';
 
 import Head from 'next/head';
+import usePersistedState from '../utils/usePersistedState';
+
 import dracula from '../styles/themes/dracula';
+import nlw from '../styles/themes/nlw';
+
 import GlocalStyles from '../styles/global';
+
 import { SelectPageProvider } from '../contexts/SelectPageButtonContext';
+import { SideBar } from '../components/SideBar';
 
 function MyApp({ Component, pageProps }) {
+  const [theme, setTheme] = usePersistedState<DefaultTheme>('theme', dracula);
+
+  const toggleTheme = () => {
+    setTheme(theme.title === 'dracula' ? nlw : dracula);
+  };
+
+  const overlayScrollBarTheme = () => {
+    let scrollbarTheme = '';
+    if (theme.title === 'dracula') {
+      scrollbarTheme = 'os-theme-light';
+    } else {
+      scrollbarTheme = 'os-theme-dark';
+    }
+    return scrollbarTheme;
+  };
+
   return (
 
-    <ThemeProvider theme={dracula}>
+    <ThemeProvider theme={theme}>
 
       <Head>
         <title>Move.it</title>
@@ -47,7 +69,7 @@ function MyApp({ Component, pageProps }) {
       <GlocalStyles />
 
       <OverlayScrollbarsComponent
-        className="os-theme-light"
+        className={overlayScrollBarTheme()}
         options={{
           scrollbars: {
             visibility: 'auto',
@@ -58,15 +80,14 @@ function MyApp({ Component, pageProps }) {
             touchSupport: true,
             snapHandle: false,
           },
-          nativeScrollbarsOverlaid: {
-            showNativeScrollbars: false,
-            initialize: true,
-          },
         }}
       >
 
         <SelectPageProvider>
+
+          <SideBar toggleTheme={toggleTheme} />
           <Component {...pageProps} />
+
         </SelectPageProvider>
 
       </OverlayScrollbarsComponent>

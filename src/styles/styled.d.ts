@@ -7,13 +7,25 @@ declare module 'styled-components' {
     title: string;
 
     colors: {
-      white: string;
+      logo: string;
+      iconLevel: string;
+      iconLevelDark: string;
       background: string;
       foreground: string;
       grayLine: string;
       text: string;
       textHighlight: string;
-      title: string;
+      textTitle: string;
+      buttonCountdown: string;
+      buttonCountdownDark: string;
+      buttonCountdownShadow: string;
+      buttonCountdownActive: string;
+      buttonCountdownActiveDark: string;
+      buttonCountdownActiveShadow: string;
+      sideBarActive: string;
+      sideBarDisable: string;
+      sideBarDisableDark: string;
+      footer: string,
       red: string;
       redDark: string;
       redShadow: string;

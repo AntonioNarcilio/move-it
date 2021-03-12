@@ -32,7 +32,7 @@ export default function Home(props: HomeProps) {
       challengesCompleted={props.challengesCompleted}
     >
 
-      <SideBar />
+      {/* <SideBar /> */}
 
       <GlobalContainer>
 

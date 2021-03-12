@@ -17,7 +17,7 @@ export const ProfileContainer = styled.div`
   div strong {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--title);
+    color: ${(props) => props.theme.colors.textTitle};
   }
 
   div p {
@@ -25,8 +25,12 @@ export const ProfileContainer = styled.div`
     margin-top: 0.5rem;
   }
 
-  div p img {
+  div p svg {
     margin-right: 0.5rem;
+  }
+
+  div p svg path {
+    fill: ${(props) => props.theme.colors.iconLevel};
   }
 
 `;

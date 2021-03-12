@@ -8,7 +8,7 @@ export const ContainerMyFooter = styled.div`
   padding-bottom: 4rem;
 
   footer a {
-    color: ${(props) => props.theme.colors.green};
+    color: ${(props) => props.theme.colors.footer};
   }
 
   @media (max-width: 825px) {

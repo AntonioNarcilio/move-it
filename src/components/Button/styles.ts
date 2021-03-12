@@ -17,7 +17,7 @@ const Button = styled.button`
   outline: 0;
 
   background: ${(props) => props.theme.colors.green};
-  color: ${(props) => props.theme.colors.background};
+  color: ${(props) => props.theme.colors.foreground};
   box-shadow: 0px 4px ${(props) => props.theme.colors.greenShadow};
 
   transition: all 0.4s ease;

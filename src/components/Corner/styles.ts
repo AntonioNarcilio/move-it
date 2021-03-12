@@ -7,7 +7,7 @@ export const CornerContent = styled.div`
 
   a {
     background: ${(props) => props.theme.colors.pink};
-    color: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.foreground};
     display: block;
     font-size: 1rem;
     line-height: 1rem;

@@ -1,3 +1,5 @@
+import SvgLevelUp from 'svg-react-loader!../../../public/icons/level-up.svg';
+
 import { useContext } from 'react';
 import { ChallengeContext } from '../../contexts/ChallengeContext';
 import { CountdownContext } from '../../contexts/CountdownContext';
@@ -70,7 +72,7 @@ export function ChallengeBox() {
         <ChallengeNotActive>
           <strong>Finalize um ciclo para receber um desafio</strong>
           <p>
-            <img src="icons/level-up.svg" alt="level up" />
+            <SvgLevelUp />
             Avance de level completando desafios.
           </p>
         </ChallengeNotActive>

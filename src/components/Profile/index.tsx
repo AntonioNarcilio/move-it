@@ -1,3 +1,5 @@
+import SvgLevel from 'svg-react-loader!../../../public/icons/level.svg';
+
 import { useContext } from 'react';
 import { ChallengeContext } from '../../contexts/ChallengeContext';
 
@@ -11,7 +13,7 @@ export function Profile() {
       <div>
         <strong>Antônio Narcilio</strong>
         <p>
-          <img src="icons/level.svg" alt="level" />
+          <SvgLevel />
           Level
           {' '}
           {level}

@@ -6,7 +6,7 @@ export const CountdownContainer = styled.div`
   align-content: center;
   font-family: "Rajdhani";
   font-weight: 600;
-  color: ${(props) => props.theme.colors.title};
+  color: ${(props) => props.theme.colors.textTitle};
 
   > div {
     flex: 1;
@@ -21,7 +21,7 @@ export const CountdownContainer = styled.div`
     font-size: 8.5rem;
     text-align: center;
 
-    color: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.textTitle};
   }
 
   > div span {
@@ -39,7 +39,7 @@ export const CountdownContainer = styled.div`
   > span {
     font-size: 7.5rem;
     margin: 0 0.5rem;
-    color: ${(props) => props.theme.colors.white};
+    color: ${(props) => props.theme.colors.textTitle};
   }
 `;
 
@@ -49,13 +49,14 @@ export const CountdownButton = styled(Button)`
   margin-top: 2rem;
   font-size: 1.25rem;
 
-  background: ${(props) => props.theme.colors.purple};
-  box-shadow: 0px 4px ${(props) => props.theme.colors.purpleShadow};
+  background: ${(props) => props.theme.colors.buttonCountdown};
+  box-shadow: 0px 4px ${(props) => props.theme.colors.buttonCountdownShadow};
+  color: ${(props) => props.theme.colors.foreground};
 
 
   &:not(:disabled):hover {
-    background: ${(props) => props.theme.colors.purpleDark};
-    box-shadow: 0px 2px ${(props) => props.theme.colors.purpleShadow};
+    background: ${(props) => props.theme.colors.buttonCountdownDark};
+    box-shadow: 0px 2px ${(props) => props.theme.colors.buttonCountdownShadow};
   }
 `;
 
@@ -65,19 +66,14 @@ export const CountdownButtonActive = styled(Button)`
   margin-top: 2rem;
   font-size: 1.25rem;
 
-  /* background: ${(props) => props.theme.colors.foreground};
-  color: ${(props) => props.theme.colors.red};
-  box-shadow: 0px 4px ${(props) => props.theme.colors.grayLine}; */
-
-
-  background: ${(props) => props.theme.colors.red};
-  color: ${(props) => props.theme.colors.background};
-  box-shadow: 0px 4px ${(props) => props.theme.colors.redShadow};
+  background: ${(props) => props.theme.colors.buttonCountdownActive};
+  color: ${(props) => props.theme.colors.foreground};
+  box-shadow: 0px 4px ${(props) => props.theme.colors.buttonCountdownActiveShadow};
 
   &:not(:disabled):hover {
-    background: ${(props) => props.theme.colors.redDark};
-    color: ${(props) => props.theme.colors.background};
-    box-shadow: 0px 2px ${(props) => props.theme.colors.redShadow};
+    background: ${(props) => props.theme.colors.buttonCountdownActiveDark};
+    color: ${(props) => props.theme.colors.textTitle};
+    box-shadow: 0px 2px ${(props) => props.theme.colors.buttonCountdownActiveShadow};
   }
 
   &:disabled {
