@@ -30,7 +30,7 @@ export function SideBar({ toggleTheme }: SideBarProps) {
     isSelectedHome, isSelectedRank, selectHomePage, selectRankPage,
   } = useContext(SelectPageButtonContext);
 
-  const { colors, title } = useContext(ThemeContext);
+  const { title } = useContext(ThemeContext);
 
   return (
     <SideBarContainer>
