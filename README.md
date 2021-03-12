@@ -12,6 +12,8 @@
 
 <img alt="GitHub repo size" title="GitHub repo size" src="https://img.shields.io/github/repo-size/AntonioNarcilio/Move-it?color=50fa7b&labelColor=282a36&logo=GitHub&logoColor=white" />
 
+<img src="https://img.shields.io/github/deployments/AntonioNarcilio/move-it/Production?color=50fa7b&label=Vercel%20deploy&labelColor=282a36&logo=Vercel" />
+
 <a href="https://github.com/AntonioNarcilio/move-it/blob/master/LICENSE">
  <img src="https://img.shields.io/github/license/AntonioNarcilio/Move-it?label=license&color=ff5555&labelColor=282a36" alt="license"/>
 </a>
