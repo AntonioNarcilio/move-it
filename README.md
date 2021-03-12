@@ -102,6 +102,7 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 - [x] `Subir de nível` ao obter a quantidade estipulada para ir para o próximo level.
 - [x] `Animação` ao subir de level.
 - [x] `Navegação` entre pagina pelo side bar.
+- [x] `Temas` dark (dracula) e light (nlw).
 
 <br>
 
@@ -127,7 +128,14 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
     <td><img src="./.github/notification.webp"></td>
     <td><img src="./.github/levelup.webp"></td>
   </tr>
+  <tr align="center">
+    <td><h5>Temas dark / light</h5></td>
+    <td><h5>Animação de carregamento</h5></td>
+  </tr>
   <tr>
+    <td><img src="./.github/dark-and-light-mode.webp"></td>
+    <td><img src="./.github/load-animation.webp"></td>
+  </tr>
 </table>
 
 <br>
