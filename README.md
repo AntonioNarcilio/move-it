@@ -170,7 +170,7 @@ git clone git@github.com:antonionarcilio/move-it.git && cd move-it
 > 📝 Baixando / Instalando dependências.
 
 ```shell
-yarn install
+yarn setup
 ```
 
 > 📝 Rodando Aplicação
