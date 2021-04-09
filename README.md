@@ -60,11 +60,11 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 </a>
 
 <br/>
-<!--
-<a href="">
- <img alt="vercel" title="vercel" src="https://img.shields.io/static/v1?label=Styled%20Components&message=Library, CSS in JS&&style=social&logo=Styled-Components" />
+
+<a href="https://styled-components.com">
+ <img alt="styled-components" title="styled-components" src="https://img.shields.io/static/v1?label=Styled%20Components&message=Library,%20CSS%20in%20JS&&style=social&logo=styled-components" />
 </a>
--->
+
 <br/>
 
 <a href="https://vercel.com">
