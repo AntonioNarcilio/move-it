@@ -4,7 +4,13 @@ export const ProfileContainer = styled.div`
   display: flex;
   align-items: center;
 
-  > img {
+  /* > img {
+    width: 5.5rem;
+    height: 5.5rem;
+    border-radius: 50%;
+  } */
+
+  > svg {
     width: 5.5rem;
     height: 5.5rem;
     border-radius: 50%;
