@@ -115,7 +115,7 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
 <a href="https://antonionarcilio-move-it.vercel.app">
 <img title="move.it" src="./.github/moveit-display.png">
 </a>
-<h6 align="center">Clique na imagem para visualizar a aplicação</h6>
+<span align="center"><h6>Clique na imagem para visualizar a aplicação</h6></span>
 
 <br>
 
