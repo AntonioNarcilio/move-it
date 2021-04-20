@@ -5,7 +5,7 @@
 </p>
 
 <h4 align="center">
-
+  
 [Descrição](#desc) ✦ [Tecnologias](#tec) ✦ [Projeto](#Projeto) ✦ [Prototipagem](#prototipagem) ✦ [Rodando localmente](#local) ✦ [Licença](#lic)
 
 <br>
@@ -127,16 +127,16 @@ O que acontece é que essas pessoas com o passar do tempo, acabam desenvolvendo 
     <td><h5>Subindo de level</h5></td>
   </tr>
   <tr>
-    <td><img src="./.github/notification.webp"></td>
-    <td><img src="./.github/levelup.webp"></td>
+    <td><a href="./.github/notification.webp?raw=true"><img src="./.github/notification.webp"></a></td>
+    <td><a href="./.github/levelup.webp?raw=true"><img src="./.github/levelup.webp"></a></td>
   </tr>
   <tr align="center">
     <td><h5>Temas dark / light</h5></td>
     <td><h5>Animação de carregamento</h5></td>
   </tr>
   <tr>
-    <td><img src="./.github/dark-and-light-mode.webp"></td>
-    <td><img src="./.github/load-animation.webp"></td>
+    <td><a href="./.github/dark-and-light-mode.webp?raw=true"><img src="./.github/dark-and-light-mode.webp"></a></td>
+    <td><a href="./.github/load-animation.webp?raw=true"><img src="./.github/load-animation.webp"></a></td>
   </tr>
 </table>
 
